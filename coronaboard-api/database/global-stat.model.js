@@ -52,8 +52,8 @@ module.exports = (sequelize) => { // 화살표 함수를 외부로 익수폴트
     {
       sequelize,                // 시퀄라이즈 인스턴스
       tableName: 'GlobalStat',  // 데이터베이스에서 테이블의 이름
-      timestamps: false,        // 테이블 인덱스
-      indexes: [
+      timestamps: false,        // 타임스탬프 속성 자동 생성 X
+      indexes: [                // 테이블의 인덱스
         {
           name: 'PRIMARY',
           unique: true,
